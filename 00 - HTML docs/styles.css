@@ -1,0 +1,39 @@
+body {
+  width: 70%;
+}
+
+.notecard {
+  width: 60%;
+  margin: 20;
+  padding: 10;
+  background-color: cornflowerblue;
+  border-left: 5 solid;
+  border-left-color: blueviolet;
+}
+
+.note-box {
+  background-color: #e7f3fe; /* Light blue background */
+  border-left: 4px solid #2196f3; /* Blue left border */
+  padding: 15px;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.note-box strong {
+  color: #0b5394; /* Darker blue for the "Note:" text */
+}
+
+.note-box a {
+  color: #5b2cff; /* Purple link color */
+  text-decoration: underline;
+}
+
+.note-box code {
+  background-color: #f1f1f1; /* Light gray for inline code */
+  padding: 2px 4px;
+  font-family: Consolas, monospace;
+  border-radius: 3px;
+}

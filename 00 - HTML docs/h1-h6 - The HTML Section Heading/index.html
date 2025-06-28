@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>&lt;h1&gt;–&lt;h6&gt;: The HTML Section Heading elements</title>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>&lt;h1&gt;–&lt;h6&gt;: The HTML Section Heading elements</h1>
+        <nav>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements"
+            target="_blank"
+            >MDN</a
+          >
+        </nav>
+      </header>
+      <p>
+        The <strong><code>&lt;h1&gt;</code></strong> to
+        <strong><code>&lt;h6&gt;</code></strong>
+        <a href="/en-US/docs/Web/HTML">HTML</a> elements represent six levels of
+        section headings. <code>&lt;h1&gt;</code> is the highest section level
+        and <code>&lt;h6&gt;</code> is the lowest. By default, all heading
+        elements create a
+        <a href="/en-US/docs/Glossary/Block-level_content">block-level</a> box
+        in the layout, starting on a new line and taking up the full width
+        available in their containing block.
+      </p>
+      <h2>Try it</h2>
+      <img src="./img/try-it-html.png" alt="html demo" />
+      <img src="./img/try-it-css.png" alt="html demo - css" />
+      <h2>Attributes</h2>
+      <p>
+        These elements only include the
+        <a href="/en-US/docs/Web/HTML/Reference/Global_attributes"
+          >global attributes</a
+        >.
+      </p>
+      <h2>Usage notes</h2>
+      <ul>
+        <li>
+          Heading information can be used by user agents to construct a table of
+          contents for a document automatically.
+        </li>
+        <li>
+          Do not use heading elements to resize text. Instead, use the
+          <a href="/en-US/docs/Glossary/CSS">CSS</a>
+          <a href="/en-US/docs/Web/CSS/font-size"><code>font-size</code></a>
+          property.
+        </li>
+        <li>
+          Do not skip heading levels: always start from <code>&lt;h1&gt;</code>,
+          followed by <code>&lt;h2&gt;</code> and so on.
+        </li>
+      </ul>
+      <h3>Avoid using multiple <code>&lt;h1&gt;</code> elements on one page</h3>
+      <p>
+        While using multiple <code>&lt;h1&gt;</code> elements on one page is
+        allowed by the HTML standard (as long as they are not
+        <a href="#nesting">nested</a>), this is not considered a best practice.
+        A page should generally have a single <code>&lt;h1&gt;</code> element
+        that describes the content of the page (similar to the document's
+        <a href="/en-US/docs/Web/HTML/Reference/Elements/title"
+          ><code>&lt;title&gt;</code></a
+        >
+        element).
+      </p>
+      <p class="note-box">
+        While using multiple <code>&lt;h1&gt;</code> elements on one page is
+        allowed by the HTML standard (as long as they are not
+        <a href="#nesting">nested</a>), this is not considered a best practice.
+        A page should generally have a single <code>&lt;h1&gt;</code> element
+        that describes the content of the page (similar to the document's
+        <a href="/en-US/docs/Web/HTML/Reference/Elements/title"
+          ><code>&lt;title&gt;</code></a
+        >
+        element).
+      </p>
+      <p>
+        Prefer using only one <code>&lt;h1&gt;</code> per page and
+        <a href="#nesting">nest headings</a> without skipping levels.
+      </p>
+      <h3>Specifying a uniform font size for</h3>
+      <p>
+        Before May 2025, the
+        <a
+          href="https://html.spec.whatwg.org/multipage/rendering.html#sections-and-headings"
+          class="external"
+          target="_blank"
+          >HTML standard</a
+        >
+        specified that <code>&lt;h1&gt;</code> elements in a
+        <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+        <code>&lt;aside&gt;</code>, or <code>&lt;nav&gt;</code> element should
+        render as an <code>&lt;h2&gt;</code> (smaller
+        <a href="/en-US/docs/Web/CSS/font-size"><code>font-size</code></a> with
+        an adjusted
+        <a href="/en-US/docs/Web/CSS/margin-block"><code>margin-block</code></a
+        >), or as an <code>&lt;h3&gt;</code> if nested another level, and so on.
+        This special context-dependent default style has now been
+        <a
+          href="https://github.com/whatwg/html/issues/7867"
+          class="external"
+          target="_blank"
+          >removed</a
+        >.
+      </p>
+      <p>
+        To ensure consistent <code>&lt;h1&gt;</code> rendering for browsers that
+        implement the old context-dependent default style, use the following
+        style rule:
+      </p>
+    </article>
+  </body>
+</html>
